@@ -1,7 +1,7 @@
-jQueryDocs
+Welcome to jQueryDocs
 ==========
 
-This Plugin shows the selected jQuery Function on http://api.jquery.com/
+jQueryDocs shows the selected jQuery Function on http://api.jquery.com/
 
 Key Binding
 ===========
