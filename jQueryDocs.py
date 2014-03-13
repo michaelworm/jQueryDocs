@@ -1,9 +1,15 @@
 import sublime, sublime_plugin, webbrowser
 
-class JqueryDocsCommand(sublime_plugin.TextCommand):
+class testCommand(sublime_plugin.TextCommand):
     def run(self, edit):
+        def clean_up(text, listing):
+            for value in listing:
+                text = text.replace(value, '')
+            return text
+
         # get current user selection
-        keyword = self.view.substr(self.view.sel()[0]).replace('(', '').replace(')', '').replace(';', '').replace('.', '') # make this better
+        replaceables = ["(", ")", "{", "}", ";", ".", "$"]
+        keyword = clean_up(self.view.substr(self.view.sel()[0]), replaceables)
 
         # define which keyword needs additional "jQuery." param appended
         # not included yet: jQuery.fn.extend, jQuery.fx.interval, jQuery.fx.off
@@ -33,5 +39,9 @@ class JqueryDocsCommand(sublime_plugin.TextCommand):
                 keyword = "jQuery." + keyword
 
         # open jQuery Docs in Browser and print a message to the user
+        if not keyword:
+            sublime.status_message("Opening jQuery Docs. Check your Browser :)")
+        else:
+            sublime.status_message("Opening jQuery Docs for: \"" + keyword + "\". Check your Browser :)")
+
         webbrowser.open_new("http://api.jquery.com/" + keyword)
-        sublime.status_message("Opening jQuery Docs for: \"" + keyword + "\". Check your Browser :)")
