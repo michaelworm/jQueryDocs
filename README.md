@@ -1,6 +1,6 @@
 # Welcome to jQueryDocs
 
-jQueryDocs is a Sublime Text 3 Package which shows the selected jQuery Function on [api.jquery.com](http://api.jquery.com/).
+jQueryDocs is a Sublime Text 3 Package which shows a selected jQuery Function on [api.jquery.com](http://api.jquery.com/).
 
 ***
 
