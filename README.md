@@ -26,7 +26,7 @@ You can also install the package manually:
 
 ### How to use
 
-Select a jQuery Function (without braces, dot or semicolon) and press the assigned key combination (Default <kbd>ALT+J</kbd>).
+Select a jQuery Function (without braces, dot or semicolon) and press the assigned key combination (Default <kbd>ALT</kbd>+<kbd>J</kbd>).
 A new window will be created in your default browser loading [api.jquery.com](http://api.jquery.com/) with the
 corresponding documentation page for the selected function.
 
@@ -35,7 +35,7 @@ corresponding documentation page for the selected function.
 You can change the default key combination by including this in your user key binding settings
 
     { "keys": ["alt+j"], "command": "jquery_docs" }
-    
+
 ***
 
 ### Thanks
