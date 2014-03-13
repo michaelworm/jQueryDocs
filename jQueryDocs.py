@@ -1,6 +1,6 @@
 import sublime, sublime_plugin, webbrowser
 
-class testCommand(sublime_plugin.TextCommand):
+class JqueryDocsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         def clean_up(text, listing):
             for value in listing:
