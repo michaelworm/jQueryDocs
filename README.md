@@ -16,7 +16,7 @@ The easiest way to install is using [Sublime Package Control](https://sublime.wb
 
 #### Manual
 
-You can also install the theme manually:
+You can also install the package manually:
 
 1. [Download the .zip](https://github.com/Miw0/jQueryDocs/archive/master.zip)
 2. Unzip and rename the folder to `jQueryDocs`
