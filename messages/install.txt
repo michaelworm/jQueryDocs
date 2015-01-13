@@ -1,14 +1,14 @@
-This package shows the selected jQuery Function on api.jquery.com
+This package shows a selected jQuery Function on api.jquery.com
 
 How to use
 ==========
 
-Select a jQuery Function (without braces, dot or semicolon) and press the assigned key combination (Default ALT+J).
-A new window will be created in your default browser loading api.jquery.com with the corresponding documentation page for the selected function.
+Just click on a jQuery Function while holding down ALT key or select a jQuery Function and press ALT+J.
+A new window will be created in your default browser loading http://api.jquery.com/SELECTION.
 
-Change default key binding
-==========================
+For more information visit: https://github.com/Miw0/jQueryDocs
 
-You can change the default key combination by including this in your user key binding settings
+Thanks
+======
 
-    { "keys": ["alt+j"], "command": "jquery_docs" }
+jQueryDocs was created and is maintained by Michael Worm (https://github.com/Miw0).

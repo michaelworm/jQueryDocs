@@ -1,0 +1,13 @@
+New feature:
+
+Clicking on a jQuery Function
+=============================
+
+Just click on a jQuery Function while holding down ALT key and a new window will be created in your default browser loading http://api.jquery.com/SELECTION.
+
+For more information visit: https://github.com/Miw0/jQueryDocs
+
+Thanks
+======
+
+jQueryDocs was created and is maintained by Michael Worm (https://github.com/Miw0).

@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, webbrowser
+import sublime, sublime_plugin, webbrowser, re
 
 class JqueryDocsCommand(sublime_plugin.TextCommand):
     def run(self, edit):
@@ -7,9 +7,9 @@ class JqueryDocsCommand(sublime_plugin.TextCommand):
                 text = text.replace(value, '')
             return text
 
-        # get current user selection
-        replaceables = ["(", ")", "{", "}", ";", ".", "$"]
-        keyword = clean_up(self.view.substr(self.view.sel()[0]), replaceables)
+        # get current user selection and strip all non-letter symbols
+        regex = re.compile('[^a-zA-Z]')
+        keyword = regex.sub('', self.view.substr(self.view.sel()[0]))
 
         # define which keyword needs additional "jQuery." param appended
         # not included yet: jQuery.fn.extend, jQuery.fx.interval, jQuery.fx.off
