@@ -1,4 +1,6 @@
 # Welcome to jQueryDocs
+[![Downloads](https://img.shields.io/packagecontrol/dt/jQueryDocs.svg)](https://packagecontrol.io/packages/jQueryDocs)
+[![Buy me a beer!](https://img.shields.io/badge/Buy%20me%20a%20beer!-%F0%9F%8D%BA-yellow.svg)](https://www.paypal.me/Miw0)
 
 jQueryDocs is a Sublime Text 3 Package which shows a selected jQuery Function on [api.jquery.com](http://api.jquery.com/).
 
